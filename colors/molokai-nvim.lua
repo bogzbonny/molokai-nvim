@@ -1,0 +1,1 @@
+require("molokai-nvim").load()
