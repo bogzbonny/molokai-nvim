@@ -1,6 +1,6 @@
 # molokai-nvim
 
-A Lua port of the classic [molokai](https://github.com/tomasr/molokai)
+A Lua port of the great [tomasr/molokai](https://github.com/tomasr/molokai)
 colorscheme for Neovim, originally based on the Monokai theme for TextMate by
 Wimer Hazenberg and its darker variant by Hamish Stuart Macpherson.
 
