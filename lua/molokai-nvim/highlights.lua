@@ -196,9 +196,9 @@ function M.apply(c, config)
   hi("TreesitterVariableBuiltin",   { fg = c.orange, italic = italic })
   hi("TreesitterVariableParameter", { fg = c.orange, italic = italic })
   hi("TreesitterVariableMember",    { fg = c.white })
-  link("@variable.builtin",         "VariableBuiltin")
-  link("@variable.parameter",       "VariableParameter")
-  link("@variable.member",          "VariableMember")
+  link("@variable.builtin",         "TreesitterVariableBuiltin")
+  link("@variable.parameter",       "TreesitterVariableParameter")
+  link("@variable.member",          "TreesitterVariableMember")
   
 
   link("@constant",               "Constant")
