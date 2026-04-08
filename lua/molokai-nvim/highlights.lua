@@ -192,13 +192,13 @@ function M.apply(c, config)
   -- Treesitter highlights
   -----------------------------------------------------------------------------
   -- Identifiers
-  hi("@variable",                vim.tbl_extend("force", { fg = c.white }, s_variables))
-  hi("VariableBuiltin",         { fg = c.orange, italic = italic })
-  hi("VariableParameter",       { fg = c.orange, italic = italic })
-  hi("VariableMember",          { fg = c.white })
-  link("@variable.builtin",       "VariableBuiltin")
-  link("@variable.parameter",     "VariableParameter")
-  link("@variable.member",        "VariableMember")
+  hi("@variable",                   vim.tbl_extend("force", { fg = c.white }, s_variables))
+  hi("TreesitterVariableBuiltin",   { fg = c.orange, italic = italic })
+  hi("TreesitterVariableParameter", { fg = c.orange, italic = italic })
+  hi("TreesitterVariableMember",    { fg = c.white })
+  link("@variable.builtin",         "VariableBuiltin")
+  link("@variable.parameter",       "VariableParameter")
+  link("@variable.member",          "VariableMember")
   
 
   link("@constant",               "Constant")
