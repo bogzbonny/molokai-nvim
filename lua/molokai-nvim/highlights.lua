@@ -193,9 +193,13 @@ function M.apply(c, config)
   -----------------------------------------------------------------------------
   -- Identifiers
   hi("@variable",                vim.tbl_extend("force", { fg = c.white }, s_variables))
-  hi("@variable.builtin",       { fg = c.orange, italic = italic })
-  hi("@variable.parameter",     { fg = c.orange, italic = italic })
-  hi("@variable.member",        { fg = c.white })
+  hi("VariableBuiltin",         { fg = c.orange, italic = italic })
+  hi("VariableParameter",       { fg = c.orange, italic = italic })
+  hi("VariableMember",          { fg = c.white })
+  link("@variable.builtin",       "VariableBuiltin")
+  link("@variable.parameter",     "VariableParameter")
+  link("@variable.member",        "VariableMember")
+  
 
   link("@constant",               "Constant")
   link("@constant.builtin",       "Constant")
